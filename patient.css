@@ -1,0 +1,98 @@
+header {
+    overflow: hidden;
+    background-color: #c1c1c1;
+    padding: 20px ;
+    text-align: center;
+    border-radius: 14px;
+}
+body {
+    font-family: Arial, sans-serif;  /* Use a clean and modern font */
+    background-color: #f4f4f4;      /* Light background color */
+    color: #333;                    /* Dark text color for better readability */
+    line-height: 1.6;               /* Increase line height for better readability */
+    justify-content: center;        /* Center content horizontally */
+    align-items: center;            /* Center content vertically */
+    /*text-align: center;             /* Center text within the body */
+}
+
+/* Optional: Style links */
+a {
+    text-align: right;  /* Align text inside the link to the right */
+    display: block;     /* Make the link a block-level element so it can be aligned */
+    text-decoration: underline;          /* Remove default underline */
+    color: #3498db;                 /* Set link color */
+    transition: color 0.3s;         /* Add smooth color transition on hover */
+}
+
+a:hover {
+    color: #2c3e50;                 /* Change color on hover */
+}
+
+img {
+    height: 75px;
+    width: 75px;
+
+}
+
+ .logo{
+     height: 150px;
+     width: 150px;
+    text-align: center;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+}
+
+div #begine{
+    display: inline;
+}
+
+table {
+    table-layout: fixed;
+    width: 75%;  /* Adjust table width if needed */
+    margin: 0 auto;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid black;  /* Optional: Add border to make it visible */
+    padding: 10px;             /* Optional: Add padding for spacing */
+    text-align: center;
+
+}
+
+footer{
+    padding: 20px;
+    background-color: #cdcdcd;
+    border-radius: 13px;
+    text-align: right; /* Aligns text to the right */
+}
+
+.social{
+    display: flex;           /* Makes icons appear in a row */
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 50px;               /* Adjusts spacing between icons */
+    margin-top: 20px;        /* Adds space above the icons */
+}
+.social a {
+    font-size: 40px;         /* Icon size */
+    color: #333;             /* Icon color */
+    text-decoration: none;   /* Removes underline */
+    width: 50px;             /* Uniform size for icons */
+    height: 50px;            /* Uniform size for icons */
+    display: flex;           /* Centers icon content */
+    justify-content: center; /* Horizontally centers icon text */
+    align-items: center;     /* Vertically centers icon text */
+}
+
+.social a:hover {
+    color: #2727a3;              /* Change text color on hover */
+}
+ #infoPat {/*div patient information*/
+    border: 1px ridge black;
+     padding: 22px;
+     border-radius: 10px;
+
+}
+#logout { /*logout link beside patient information*/
+    float: right;
+}
