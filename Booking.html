@@ -3,52 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <title>Malath | مَلاذ</title>
-  <link rel="stylesheet" href="patient.css">
+  <link rel="stylesheet" href="booking.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 <!--Header-->
 <header>
-  <img class="logo" src="images/Malath%20logo.png" alt="logo">
-  <h1>Malath | مَلاذ </h1>
+    <!--Logo-->
+    <div class="logo">
+        <img  src="images/Malath2.png" alt="logo" style="width: 130px; height: auto;">
+        <h1>MALATH | مَلاذ <br><span>Clinics</span></h1>
+    </div><br>
+    <!--Buttons-->
+    <button id="logout" ><a>Log out</a></button>
+    <button id="patInfo"><a>Patient Information</a></button>
 
-  <a id=logout href="logout.html"> Log out </a>
-  <h2> <b>Book an Appointment </b></h2>
+
+    <h3>Welcome [name]  </h3>
 </header>
-<!--Header-->
-<hr><br>
-<a href="#web.html"> [Patient Information] </a>
+<br><br>
 
 <!--FORM OF BOOKING-->
-<div id="booking">
-  <form>
-    <label for="speci">Choose a specialty:</label>
-    <select id="speci" name="speci">
-      <option value="Cardiology">Cardiology</option>
-      <option value="Dermatology">Dermatology</option>
-      <option value="Neurology">Neurology</option>
-      <option value="Pediatrics">Pediatrics</option>
+<div class="booking">
+  <form action="#">
+    <h2> Book an Appointment </h2><br>
+<div class="input">
+    <select id="speci" name="speci" required>
+        <option value=""  disabled selected> </option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Dermatology">Dermatology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Pediatrics">Pediatrics</option>
     </select>
+    <span for="speci" class="drsList" >Choose a specialty:</span>
 
-    <label for="dr">Choose a doctor:</label>
-    <select id="dr" name="drs">
-      <option value="Cardiology">John doe</option>
-      <option value="Dermatology">Derina Madeline</option>
-      <option value="Neurology">Ahmed Nasser</option>
+</div>
+
+    <div class="input">
+    <select id="dr" name="drs" required>
+        <option value=""> </option>
+        <option value="dr1">John doe</option>
+      <option value="dr2">Derina Madeline</option>
+      <option value="dr3">Ahmed Nasser</option>
     </select>
+        <span for="dr" class="drsList">Choose a doctor:</span>
 
-    <label for="date" >Choose a date:</label>
-    <input type="date" id="date" name="date" >
+    </div>
 
-    <label for="time" >Choose a date:</label>
+    <div class="input">
+    <input type="date" id="date" name="date" required >
+      <span >Choose a date:</span>
+    </div>
+
+
+    <div class="input">
     <input type="time" id="time" name="time">
+      <span for="time" >Choose a time:</span>
+    </div>
 
-    <label for="visit" >Reason for visit:</label>
-    <input type="text" id="visit" name="visit" >
-    <input type="submit" value="Submit">
+    <div class="input">
+    <input type="text" id="visit" name="visit"  required>
+        <span class="visit" >Reason for visit:</span>
+    </div>
 
-
+    <div class="input">
+    <input type="submit" id="submitButton" value="Submit">
+    </div>
 
 
   </form>
@@ -57,22 +78,22 @@
 
 
 <footer>
-  <img src="images/Malath%20logo.png">
-  <h3> Malath | مَلاذ </h3>
-  <p>مرحبًا بكم في مَلاذ، وجهتكم الأمثل للرعاية الصحية الشاملة.
-    نسعى لتقديم خدمات طبية موثوقة ومتميزة في بيئة مريحة وآمنة.
-    رؤيتنا هي تحسين جودة <br>الحياة من خلال الرعاية الصحية المتكاملة،
-    ونهتم باحتياجاتكم الصحية بكل احترافية واهتمام.
-    تواصلوا معنا للحصول على استشاراتكم الطبية وخدماتنا المتنوعة.
-  </p>
+    <img src="images/Malath%20logo.png" alt="logo" >
+    <!-- <h3> Malath | مَلاذ </h3>-->
+    <p>مرحبًا بكم في مَلاذ، وجهتكم الأمثل للرعاية الصحية الشاملة.
+        نسعى لتقديم خدمات طبية موثوقة ومتميزة في بيئة مريحة وآمنة.
+        رؤيتنا هي تحسين جودة <br>الحياة من خلال الرعاية الصحية المتكاملة،
+        ونهتم باحتياجاتكم الصحية بكل احترافية واهتمام.
+        تواصلوا معنا للحصول على استشاراتكم الطبية وخدماتنا المتنوعة.
+    </p>
 
-  <div class="social">
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-google"></i></a>
-    <a href="#"><i class="fa fa-youtube"></i></a>
-  </div>
-  <p> حقوق النشر © 2025 مَلاذ. </p>
+    <div class="social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
+    <p> حقوق النشر © 2025 مَلاذ. </p>
 </footer>
 
 </body>

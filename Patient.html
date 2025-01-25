@@ -4,69 +4,69 @@
     <meta charset="UTF-8">
     <title>Malath | مَلاذ</title>
     <link rel="stylesheet" href="patient.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <!--Header-->
 <header>
-<img class="logo" src="images/Malath%20logo.png" alt="logo">
-    <h1>Malath | مَلاذ </h1>
+    <!--Logo-->
+    <div class="logo">
+        <img  src="images/Malath2.png" alt="logo" style="width: 130px; height: auto;">
+        <h1>MALATH | مَلاذ <br><span>Clinics</span></h1>
+    </div><br>
+    <!--Buttons-->
+    <button id="logout" ><a>Log out</a></button>
+    <button id="patInfo"><a>Patient Information</a></button>
 
-    <a id=logout href="logout.html"> Log out </a>
-    <h3 style="text-align: left;">Welcome [name]  </h3>
+
+    <h3>Welcome [name]  </h3>
 </header>
-<!--Header-->
-<hr><br>
+<br><br>
+<button id="bookAppo"><a href="Booking.html" >Book an Appointment</a></button>
 
-<div id="infoPat">
-<a href="#web.html"> [Patient Information] </a>
-</div>
-<br>
-<a href="Booking.html"> Book an Appointment </a>
-<br>
 
 <!--Appointment Table-->
 <div class="appointmentList">
    <table>
+       <thead>
        <tr>
-           <th>Date</th>
+           <th style="border-top-left-radius: 12px ;">Date</th>
            <th>Doctor name</th>
            <th>Time</th>
            <th>Doctor photo</th>
-           <th>Status</th>
+           <th style="border-top-right-radius: 12px ;">Status</th>
 
        </tr>
+       </thead>
+       <tbody>
        <tr>
-           <td>18 April</td>
+           <td style="border-bottom-left-radius: 12px ;">18 April</td>
            <td>John doe</td>
            <td>13:30 </td>
-           <td><img src="images/doc2.jpg"></td>
+           <td><img src="images/doc2.jpg" alt="doc"style="border-radius: 8px"></td>
            <td>Confirmed</td>
            <td><a href="#cancel">Cancel</a></td>
 
 
        </tr>
        <tr>
-           <td>18 April</td>
+           <td style="border-bottom-left-radius: 12px ;">18 April</td>
            <td>John doe</td>
            <td>13:30 </td>
-           <td><img src="images/doc1.jpg"></td>
+           <td><img src="images/doc1.jpg" alt="doc" style="border-radius: 8px"></td>
            <td>Pending</td>
-           <td><a href="#cancel">Cancel</a></td>
+           <td style="border-bottom-right-radius: 12px ;"><a href="cancel">Cancel</a></td>
 
        </tr>
+       </tbody>
    </table>
-</div><br><hr>
+</div><br>
 <!--Appointment Table-->
 
 
 <footer>
-    <img src="images/Malath%20logo.png">
-    <h3> Malath | مَلاذ </h3>
+    <img src="images/Malath%20logo.png" alt="logo" >
+   <!-- <h3> Malath | مَلاذ </h3>-->
     <p>مرحبًا بكم في مَلاذ، وجهتكم الأمثل للرعاية الصحية الشاملة.
         نسعى لتقديم خدمات طبية موثوقة ومتميزة في بيئة مريحة وآمنة.
         رؤيتنا هي تحسين جودة <br>الحياة من خلال الرعاية الصحية المتكاملة،
