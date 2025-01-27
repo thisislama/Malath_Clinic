@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malath | مَلاذ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border: 1px solid #bbdefb;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .doctor-info {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #bbdefb;
+      border-radius: 8px;
+    }
+    .doctor-info img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #90caf9;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #42a5f5;
+      color: #ffffff;
+    }
+    .btn-confirm {
+      background-color: #1e88e5;
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+    }
+    .btn-confirm:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome, Dr. Waleed</h1>
+  <div class="doctor-info">
+    <h2>Doctor's Information</h2>
+    <img src="doctor.jpg" alt="Doctor Waleed's Photo">
+    <p><strong>First Name:</strong> Waleed</p>
+    <p><strong>Last Name:</strong> Aldbasi</p>
+    <p><strong>ID:</strong> 1122883778</p>
+    <p><strong>Speciality:</strong> General Practitioner</p>
+    <p><strong>Email:</strong> waleed.aldbasi@gmail.com</p>
+
+
+  </div>
+  <h2>Upcoming Appointments</h2>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Patient's Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Reason</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>2025-01-25</td>
+      <td>10:00 AM</td>
+      <td>Mohammed</td>
+      <td>25</td>
+      <td>Male</td>
+      <td>Fever</td>
+      <td><button class="btn-confirm">Confirm</button></td>
+    </tr>
+  </table>
+
+  <h2>Patients List</h2>
+  <table>
+    <tr>
+      <th>Patients's Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Medications</th>
+      <th>prescribe medication</th>
+    </tr>
+    <tr>
+      <td>Amal</td>
+      <td>30</td>
+      <td>Female</td>
+      <td>None</td>
+      <td><a href="prescribe_medication.html" class="btn-confirm">Prescribe</a></td>
+    </tr>
+
+
+      <td>Noura</td>
+      <td>32</td>
+      <td>Female</td>
+      <td>None</td>
+      <td><a href="prescribe_medication.html" class="btn-confirm">Prescribe</a></td>
+    </tr>
+  </table>
+  <a href="index.html">Sign Out</a>
+</div>
+</body>
+</html>
+
