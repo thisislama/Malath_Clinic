@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malath | مَلاذ</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      width: 60%;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+      color: #555;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .checkbox-group {
+      margin: 15px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .checkbox-group label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .btn-submit {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-submit:hover {
+      background-color: #0056b3;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Patient's Medications</h1>
+  </div>
+  <form action="doctor_homepage.html" method="POST">
+    <!-- Patient Information -->
+    <label for="patient-name">Patient's Name:</label>
+    <input type="text" id="patient-name" value="Noora" readonly>
+
+    <label for="patient-age">Age:</label>
+    <input type="text" id="patient-age" value="20" readonly>
+
+    <label for="patient-gender">Gender:</label>
+    <input type="text" id="patient-gender" value="Female" readonly>
+
+    <!-- Medications -->
+    <label>Medications:</label>
+    <div class="checkbox-group">
+      <label for="med1">
+        <input type="checkbox" id="med1" name="medications" value="Aspirin"> Aspirin
+      </label>
+      <label for="med2">
+        <input type="checkbox" id="med2" name="medications" value="Ibuprofen"> Ibuprofen
+      </label>
+      <label for="med3">
+        <input type="checkbox" id="med3" name="medications" value="Paracetamol"> Paracetamol
+      </label>
+      <label for="med4">
+        <input type="checkbox" id="med4" name="medications" value="Antibiotics"> Antibiotics
+      </label>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
