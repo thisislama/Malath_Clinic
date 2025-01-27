@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -90,40 +93,44 @@ button:hover{
     background-color: #0e384e; /* Darker background color on hover */
     color: #e3e3e3;            /* Lighter text color on hover */
     transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #patInfo {
-    background-color: #4763b1; /* Red button */
+    background-color: #9397dd; /* Red button */
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 26px;
     cursor: pointer;
     transition: all 0.3s ease;
+    right: -32px;
 }
 
 #bookAppo{
-    background-color: #5785ff;
+    background-color: #429542;
     color: white;
     border: none;
-    width: 130px;
+    width: 143px;
     height: 52px;
-    border-radius: 15px;
-    padding: 2px 25px;
+    border-radius: 18px;
+    padding: 1px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     position: absolute;
-    right: 270px;
-    top:390px;
+    right: 300px;
+    top:400px;
 }
 
+#bookAppo:hover{
+    background-color: #54bd54;
+}
 
 #logout {
     position: absolute;
     top: 45px;
-    right: 10px;
+    right: 75px;
     background-color: #4763b1; /* Red button */
     color: white;
     border: none;
@@ -143,6 +150,7 @@ button a {
     justify-self: center;
     justify-content: center;
 }
+
 
 
 footer{
