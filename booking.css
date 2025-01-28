@@ -76,10 +76,13 @@ span {
 
 h3{
     font-family:'Amiri', serif;
-    font-size: 22px;
+    font-size: 28px;
     color: #505498;
     padding-top: 90px;
-    margin-left: 100px;
+    /*  margin-left: 100px;*/
+    padding-left:190px ;
+    margin-bottom: 80px;
+
 }
 
 button {
@@ -107,7 +110,7 @@ button:hover{
     transition: all 0.3s ease;
     right: -32px;
 }
-
+/*
 #bookAppo{
     background-color: #429542;
     color: white;
@@ -126,7 +129,7 @@ button:hover{
 #bookAppo:hover{
     background-color: #54bd54;
 }
-
+*/
 #logout {
     position: absolute;
     top: 45px;
@@ -194,6 +197,19 @@ footer{
 
 
 
+#patInfo {
+    background-color: #9397dd; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    right: -32px;
+}
+
+
 /*--------------------BOOKING FORM ---------------*/
 .booking {
     background-color: rgba(207, 212, 227, 0.59);
@@ -203,9 +219,9 @@ footer{
     padding: 10px;
     box-shadow: 0px 0px 5px #888888,
     0px 0px 25px #888;
-    height: 420px;
     width: 520px;
     justify-self: center;
+    height: 490px;
 }
 
 .booking h2{
@@ -219,72 +235,6 @@ footer{
     color: #020206;
 
 }
-/*
-.booking .input {
-    position: relative;
-    margin-bottom: 20px;
-    width: 70%;
-    justify-self: center;
-    background: #e3e6ef;
-}
-
-.booking .input input,
-.booking .input select {
-    width: 100%;
-    line-height: 19px;
-    padding: 5px 0;
-    font-size: 16px;
-    border: none;
-    border-bottom: 2px solid #333333;
-    outline: none;
-    box-sizing: border-box;
-    background-color: rgba(179, 179, 179, 0.25);
-    text-align: center;
-    z-index: 1;
-    background: #e3e6ef;
-}
-
-.booking .input span {
-    position: absolute;
-    left: 0;
-    font-size: 16px;
-    pointer-events: none;
-    color: #666;
-    transition: all 0.3s ease-in-out;
-    text-indent: 8px;
-    top:2px;
-}
-
-.booking select:focus + span,
-.booking select:not([value=""]) + span {
-    top: -20px;
-    font-size: 14px;
-}
-.booking select + span{
-    color: #0618f8;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-
-.booking .input input:focus ~ span,
-.booking .input select:focus ~ span/*,
-.booking .input input:not(:placeholder-shown) ~ span {
-    color: #940011;
-    font-size: 14px;
-  /*  top: -20px!important;
-}
-.booking .input input:valid ~ span{
-    top: -20px!important;
-
-}
-
-.booking .input input[type="text"]:focus {
-    border-bottom-color: #940011;
-    top:-25px;
-}
-*/
-
 
 .booking .input {
     position: relative;
@@ -332,20 +282,19 @@ footer{
 
 
 .booking .input input[type="submit"] {
-    font-family: Poppins sans-serif;
-    right: -95px;
-    font-weight: normal;
-    color: #fff;
-    padding: 10px;
-    margin: 0 auto;
-    position: relative;
-    background: #368836;
-    box-shadow: 0px 0px 5px #fff,
-    0px 0px 5px #fff;
-    border-radius: 35px;
+position: absolute;
+    top: 10px;
+    right: 85px;
+    background-color: #259c28;
+    color: white;
     border: none;
-    width: 150px;
-    justify-items: center!important;
+    border-radius: 22px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 167px;
+
 
 }
 
@@ -355,6 +304,16 @@ footer{
 
 }
 
-
-
+ .Submit_Spec {
+    background-color: #259c28;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 105px;
+   margin-bottom: 22px;
+}
 

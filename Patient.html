@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>Malath | مَلاذ</title>
     <link rel="stylesheet" href="patient.css">
@@ -18,36 +19,39 @@
     </div><br>
     <!--Buttons Links-->
     <button id="logout" ><a>Log out</a></button>
-    <button id="patInfo"><a>Patient Information</a></button>
+    <!--<button id="patInfo"><a>Patient Information</a></button>-->
 
 
-    <h3>Welcome [name]  </h3>
+    <h3 > Welcome, Nora </h3>
 </header>
 
 <br><br>
 <button id="bookAppo"><a href="Booking.html" >Book an Appointment</a></button>
 
-<!--
-<div class="sqr">
+
+<!--<div class="sqr">-->
+<button id="patInfo" style="top: -42px; left:270px ;" ><a>Patient Information</a></button>
 <div class="PatientInfo">
+
+   <!-- <h2 id="patInfo2">Patient Information</h2>-->
+
     <ul>
-        <li>  <h4> First Name: </h4> </li>
-        <li>  <h4> Last Name: </h4> </li>
-        <li>  <h4> ID: </h4> </li>
-        <li>  <h4> Gender: </h4> </li>
-        <li>  <h4> Date Of Birth: </h4> </li>
-        <li>  <h4> Email: </h4> </li>
-        <li>  <h4> Address: </h4> </li>
+        <li>  <h4> Name: Nora Ahmed</h4> </li>
+        <li>  <h4> ID: 332211 </h4> </li>
+        <li>  <h4> Gender: Female </h4> </li>
+        <li>  <h4> Date Of Birth: 12/12/1998 </h4> </li>
+        <li>  <h4> Email: Nora@gmail.com </h4> </li>
+        <li>  <h4> Address: 12st Riyadh, Saudi Arabia  </h4> </li>
     </ul>
 </div>
--->
+
 
 
 <!--Appointment Table-->
 <div class="appointmentList">
-   <table>
-       <thead>
-       <tr>
+   <table id="appointmentTable">
+       <thead >
+       <tr style="text-align: center;">
            <th style="border-top-left-radius: 12px ;">Date</th>
            <th>Doctor name</th>
            <th>Time</th>
@@ -56,11 +60,11 @@
 
        </tr>
        </thead>
-       <tbody>
+       <tbody >
        <tr>
-           <td style="border-bottom-left-radius: 12px ;">18 April</td>
-           <td>John doe</td>
-           <td>13:30 </td>
+           <td style="border-bottom-left-radius: 12px ;">2025-12-20</td>
+           <td style="width: 97px;">Sara doe</td>
+           <td style="width: 109px;">13:30 PM</td>
            <td><img src="images/doc2.jpg" alt="doc"style="border-radius: 8px"></td>
            <td>Confirmed</td>
            <td   style="border-top-right-radius: 12px;"> <a href="#cancel">Cancel</a></td>
@@ -68,9 +72,9 @@
 
        </tr>
        <tr>
-           <td style="border-bottom-left-radius: 12px ;">18 April</td>
+           <td style="border-bottom-left-radius: 12px ; width:127px ;">2025-08-22</td>
            <td>John doe</td>
-           <td>13:30 </td>
+           <td>10:30 AM</td>
            <td><img src="images/doc1.jpg" alt="doc" style="border-radius: 8px"></td>
            <td>Pending</td>
            <td style="border-bottom-right-radius: 12px ; background: #d4d5df ;"><a href="cancel">Cancel</a></td>
@@ -100,6 +104,9 @@
 </div>
     <p> حقوق النشر © 2025 مَلاذ. </p>
 </footer>
+
+
+<script src="order.js"></script>
 
 </body>
 </html>

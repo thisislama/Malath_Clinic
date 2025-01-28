@@ -17,18 +17,21 @@
     </div><br>
     <!--Buttons-->
     <button id="logout" ><a>Log out</a></button>
-    <button id="patInfo"><a>Patient Information</a></button>
+  <!--  <button id="patInfo"><a>Patient Information</a></button>-->
 
 
-    <h3>Welcome [name]  </h3>
+    <h3 >Welcome, Nora  </h3>
 </header>
 <br><br>
-
+<!--
+<button id="patInfo" style="top: -42px; left:270px ;" ><a>Patient Information</a></button>
+-->
 <!--FORM OF BOOKING-->
 <div class="booking">
   <form action="#">
     <h2> Book an Appointment </h2><br>
 <div class="input">
+    <form class="Speciality">
     <select id="speci" name="speci" required>
         <option value=""  disabled selected> </option>
         <option value="Cardiology">Cardiology</option>
@@ -38,6 +41,8 @@
     </select>
     <span for="speci" class="drsList" >Choose a specialty:</span>
 
+        <button class="Submit_Spec" type="submit">Submit</button>
+    </form>
 </div>
 
     <div class="input">
@@ -68,7 +73,7 @@
     </div>
 
     <div class="input">
-    <input type="submit" id="submitButton" value="Submit">
+    <input type="submit" id="submitButton" value="Submit Booking">
     </div>
 
 
@@ -95,6 +100,8 @@
     </div>
     <p> حقوق النشر © 2025 مَلاذ. </p>
 </footer>
+
+
 
 </body>
 </html>
