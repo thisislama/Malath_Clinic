@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Malath | مَلاذ</title>
+  <link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Link to the external CSS -->
+</head>
+<body>
+<header class="header-container">
+    <!--Logo-->
+    <div class="logo">
+        <img  src="images/logowo.png" alt="logo" style="width: 130px; height: auto;">
+        <h1>MALATH | مَلاذ <br><span>Clinics</span></h1>
+    </div><br>
+<nav>
+  <ul>
+    <li><a href="login.html"><span class="nav-button">Log In</span></a></li>
+    <li><a href="index.html"><span class="nav-button">Home</span></a></li>
+  </ul>
+</nav>
+</header>
+
+<main>
+
+
+  <h1>Create Your Account</h1>
+  <form id="role-form">
+    <h2>Choose Your Role</h2>
+    <div class="radio-group">
+      <label><input type="radio" name="role" value="patient" onclick="showForm('patient')" required> Patient</label>
+      <label><input type="radio" name="role" value="doctor" onclick="showForm('doctor')" required> Doctor</label>
+    </div>
+  </form>
+<div class="form-container">
+  <!-- Patient Form -->
+  
+  
+  <form id="patient-form" action="patient.html" method="POST" style="display:none;">
+    <h2>Patient Information</h2>
+    <div class="form-group">
+      <label for="patient-first-name">First Name:</label>
+      <input type="text" id="patient-first-name" name="first_name" required>
+    </div>
+    <div class="form-group">
+      <label for="patient-last-name">Last Name:</label>
+      <input type="text" id="patient-last-name" name="last_name" required>
+    </div>
+    <div class="form-group">
+      <label for="patient-id">ID:</label>
+      <input type="text" id="patient-id" name="id" required>
+    </div>
+    <div class="form-group">
+      <label for="patient-gender">Gender:</label>
+      <input type="text" id="patient-gender" name="gender" required>
+    </div>
+    <div class="form-group">
+      <label for="patient-dob">Date of Birth:</label>
+      <input type="date" id="patient-dob" name="dob" required>
+    </div>
+    <div class="form-group">
+      <label for="patient-email">Email Address:</label>
+      <input type="email" id="patient-email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="patient-password">Password:</label>
+      <input type="password" id="patient-password" name="password" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Doctor Form -->
+  <form id="doctor-form" action="doctor_homepage.html" method="POST" style="display:none;">
+    <h2>Doctor Information</h2>
+    <div class="form-group">
+      <label for="doctor-first-name">First Name:</label>
+      <input type="text" id="doctor-first-name" name="first_name" required>
+    </div>
+    <div class="form-group">
+      <label for="doctor-last-name">Last Name:</label>
+      <input type="text" id="doctor-last-name" name="last_name" required>
+    </div>
+    <div class="form-group">
+      <label for="doctor-id">ID:</label>
+      <input type="text" id="doctor-id" name="id" required>
+    </div>
+    <div class="form-group">
+      <label for="doctor-photo">Photo:</label>
+      <input type="file" id="doctor-photo" name="photo" required>
+    </div>
+    <div class="form-group">
+      <label for="doctor-speciality">Speciality:</label>
+      <select id="doctor-speciality" name="speciality" required>
+        <option value="general">General</option>
+        <option value="cardiology">Cardiology</option>
+        <option value="neurology">Neurology</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="doctor-email">Email Address:</label>
+      <input type="email" id="doctor-email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="doctor-password">Password:</label>
+      <input type="password" id="doctor-password" name="password" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  </div>
+</main>
+<footer>
+    <img src="images/logo.png" width="70" height="70" alt="logo" >
+   <!-- <h3> Malath | مَلاذ </h3>-->
+    <p>مرحبًا بكم في مَلاذ، وجهتكم الأمثل للرعاية الصحية الشاملة.
+        نسعى لتقديم خدمات طبية موثوقة ومتميزة في بيئة مريحة وآمنة.
+        رؤيتنا هي تحسين جودة <br>الحياة من خلال الرعاية الصحية المتكاملة،
+        ونهتم باحتياجاتكم الصحية بكل احترافية واهتمام.
+        تواصلوا معنا للحصول على استشاراتكم الطبية وخدماتنا المتنوعة.
+    </p>
+
+<div class="social">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-google"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+</div>
+    <p> حقوق النشر © 2025 مَلاذ. </p>
+</footer>
+
+<script>
+// JavaScript to show the correct form based on role
+// JavaScript to show the correct form based on role
+function showForm(role) {
+  // Hide both forms initially
+  document.getElementById('patient-form').style.display = 'none';
+  document.getElementById('doctor-form').style.display = 'none';
+  
+  // Show the form based on the role selected
+  if (role === 'patient') {
+    document.getElementById('patient-form').style.display = 'block';
+  } else if (role === 'doctor') {
+    document.getElementById('doctor-form').style.display = 'block';
+  }
+}
+
+</script>
+</body>
+</html>

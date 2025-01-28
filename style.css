@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+   /* font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; Light gray background */
+	font-family: 'Poppins', sans-serif;  /* Use a clean and modern font */
+    color: #333;                    /* Dark text color for better readability */
+    line-height: 1.6;               /* Increase line height for better readability */
+    justify-content: center;        /* Center content horizontally */
+    align-items: center;
+    background-color: #fff;
+    min-height: 100vh;
+	width: 100%
+}
+html, body {
+  height: 100%;
+
+}
+
+/* Header Styling */
+header {
+	background-color: #fff;
+    display: inline-block;
+    padding: 20px ;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 130px;
+    height: auto;
+}
+
+header h1 {
+    font-family: 'Amiri', serif;
+    font-size: 32px;
+    color: #5384DA;
+    padding-top: 15px;
+    line-height: 25px;
+}
+
+header h3 {
+    font-family: 'Amiri', serif;
+    font-size: 22px;
+    color: #505498;
+    padding-top: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #005c99;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Styling */
+main {
+    
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+	flex: 1;
+}
+
+main h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.auth-container {
+    margin-top: 20px;
+}
+
+.auth-container p {
+    margin-top: 10px;
+}
+
+.auth-container button {
+    width: 100%;
+}
+
+/* Footer Styling */
+footer {
+	/*position: relative;*/
+    padding: 20px;
+    text-align: center;
+    background-color: #cdcdcd;
+    border-radius: 13px;
+    background-image: url("images/footer.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+	color: black;
+    margin-top: auto;
+	width:100%;
+}
+
+footer p {
+    font-size: 14px;
+    color: black;
+}
+
+/* Social Media Icons */
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 20px;
+}
+
+.social a {
+    font-size: 40px;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.social a:hover {
+    color: #3636fa;
+    background-color: #e3e3e3;
+}
+
+/* Form Container Styling */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	 text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+	display: block;
+    margin-bottom: 8px
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+	text-align: left;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #005c99;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #004080;
+}
+.radio-group{
+display: flex;
+flex-direction: column;	
+	
+}
+.radio-group label{
+	display: inline-flex;
+	align-items: left;
+	margin: 8px;
+	
+}
+input[type="radio"]{
+	margin-right: 8px;
+}
+
+/* Basic styling for the navigation container */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+     color: #FFF;
+    text-align: center;
+    justify-items: right;
+    justify-self: right;
+    justify-content: right;/* Spacing between buttons */
+}
+
+/* Style for the span that wraps each link */
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005c99;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  
+}
+
+/* Hover effect for buttons */
+.nav-button:hover {
+  background-color: #004080;
+  transform: scale(1.05);
+}
+
+/* Ensure the <a> tags are styled without text decoration */
+nav a {
+  text-decoration: none; /* Remove underline */
+}
+.header-container {
+  display: flex;
+  justify-content: space-between; /* This will push the logo to the left and the nav to the right */
+  align-items: center; /* Vertically aligns the items in the center */
+  padding: 20px;
+  background-color: #fff; /* Optional: background color for the header */
+}
