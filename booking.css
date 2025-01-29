@@ -27,19 +27,19 @@ header {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;  /* Use a clean and modern font */
-    color: #333;                    /* Dark text color for better readability */
-    line-height: 1.6;               /* Increase line height for better readability */
-    justify-content: center;        /* Center content horizontally */
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    justify-content: center;
     align-items: center;
     background-color: #fff;
 }
 
 a {
-    text-align: right;  /* Align text inside the link to the right */
-    display: block;     /* Make the link a block-level element so it can be aligned */
-    text-decoration: none;          /* Remove default underline */
-    color: #3498db;                 /* Set link color */
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    color: #3498db;
     transition: color 0.3s;
 }
 
@@ -55,21 +55,23 @@ img {
     border: none;
     align-items: center;
 
+
 }
 
 h1{
     font-family:'Amiri', serif;
     font-size: 32px;
-    color: #2b35a9;
     padding-top: 15px;
     line-height: 25px;
+    color: #3258be !important;
+
 
 }
 
 span {
     font-family:'Amiri', serif;
     font-size: 20px;
-    color: #2b35a9;
+    color: #3258be !important;
     text-align: left;
     font-weight: revert;
 }
@@ -93,14 +95,14 @@ button {
 }
 
 button:hover{
-    background-color: #0e384e; /* Darker background color on hover */
-    color: #e3e3e3;            /* Lighter text color on hover */
+    background-color: #0e384e;
+    color: #e3e3e3;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #patInfo {
-    background-color: #9397dd; /* Red button */
+    background-color: #9397dd;
     color: white;
     border: none;
     border-radius: 15px;
@@ -110,31 +112,12 @@ button:hover{
     transition: all 0.3s ease;
     right: -32px;
 }
-/*
-#bookAppo{
-    background-color: #429542;
-    color: white;
-    border: none;
-    width: 143px;
-    height: 52px;
-    border-radius: 18px;
-    padding: 1px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: absolute;
-    right: 300px;
-    top:400px;
-}
 
-#bookAppo:hover{
-    background-color: #54bd54;
-}
-*/
 #logout {
     position: absolute;
     top: 45px;
     right: 75px;
-    background-color: #4763b1; /* Red button */
+    background-color: #4763b1;
     color: white;
     border: none;
     border-radius: 25px;
@@ -170,10 +153,10 @@ footer{
 }
 
 .social{
-    display: flex;           /* Makes icons appear in a row */
-    justify-content: center; /* Centers the icons horizontally */
-    gap: 48px;               /* Adjusts spacing between icons */
-    margin-top: 20px;        /* Adds space above the icons */
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    margin-top: 20px;
     padding: 12px;
     background-color: transparent;
 
@@ -198,7 +181,7 @@ footer{
 
 
 #patInfo {
-    background-color: #9397dd; /* Red button */
+    background-color: #9397dd;
     color: white;
     border: none;
     border-radius: 15px;
@@ -273,7 +256,7 @@ footer{
 
 .booking .input :is(input, select):focus ~ span,
 .booking .input :is(input, select):valid ~ span{
-    /* Apply styles to the span when either input or select is focused */
+
     color: #17193e;
     transform: translateY(-22px);
     transition: all 0.3s ease-in-out;
@@ -302,6 +285,27 @@ position: absolute;
     background: #3cc33c;
     cursor: pointer;
 
+}
+
+.booking #submitButton {
+    position: absolute;
+    top: 5px;
+    right: 85px;
+    background-color: #259c28;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 167px;
+
+}
+
+.booking #submitButton:hover {
+    background: #3cc33c;
+    cursor: pointer;
 }
 
  .Submit_Spec {

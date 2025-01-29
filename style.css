@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Reset and General Styles */
 * {
     margin: 0;
@@ -96,11 +103,11 @@ button a {
 /* Main Content Styling */
 main {
     
-    padding: 20px;
+    padding: 10px;
     max-width: 600px;
     margin: 20px auto;
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 	flex: 1;
@@ -176,7 +183,7 @@ footer p {
 .form-container {
     width: 100%;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -187,6 +194,14 @@ footer p {
 
 .form-group {
     margin-bottom: 15px;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"]
+{
+    width: 430px;
+    padding: 4px;
+    margin: 7px;
 }
 
 .form-group label {
@@ -225,7 +240,7 @@ flex-direction: column;
 }
 .radio-group label{
 	display: inline-flex;
-	align-items: left;
+	text-align: left;
 	margin: 8px;
 	
 }
@@ -240,7 +255,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 20px; 
-     color: #FFF;
+     color: #FFF!important;
     text-align: center;
     justify-items: right;
     justify-self: right;
@@ -249,11 +264,11 @@ nav ul {
 
 /* Style for the span that wraps each link */
 .nav-button {
-  display: inline-block;
+  display: block;
   padding: 10px 20px;
   background-color: #005c99;
-  color: white;
-  border-radius: 12px;
+    color: #FFF!important;
+    border-radius: 16px;
   text-align: center;
   cursor: pointer;
   font-size: 16px;
@@ -278,3 +293,170 @@ nav a {
   padding: 20px;
   background-color: #fff; /* Optional: background color for the header */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+header {
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px ;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 14px;
+    font-weight: bold;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;  /* Use a clean and modern font */
+    color: #333;                    /* Dark text color for better readability */
+    line-height: 1.6;               /* Increase line height for better readability */
+    justify-content: center;        /* Center content horizontally */
+    align-items: center;
+    background-color: #fff;
+}
+
+a {
+    text-align: right;  /* Align text inside the link to the right */
+    display: block;     /* Make the link a block-level element so it can be aligned */
+    text-decoration: none;          /* Remove default underline */
+    color: #3498db;                 /* Set link color */
+    transition: color 0.3s;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+}
+
+.logo{
+    text-align: left;
+    display: flex;
+    gap: 10px;
+    border: none;
+    align-items: center;
+
+}
+
+h1{
+    font-family:'Amiri', serif;
+    font-size: 32px;
+    color: #3258be !important;
+    padding-top: 15px;
+    line-height: 25px;
+
+}
+
+span {
+    font-family:'Amiri', serif;
+    font-size: 20px;
+    color: #3258be !important;
+    text-align: left;
+    font-weight: revert;
+}
+
+h3{
+    font-family:'Amiri', serif;
+    font-size: 28px;
+    color: #505498;
+    padding-top: 90px;
+    /*  margin-left: 100px;*/
+    padding-left:190px ;
+    margin-bottom: 80px;
+
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+    vertical-align: center;
+}
+
+button:hover{
+    background-color: #0e384e; /* Darker background color on hover */
+    color: #e3e3e3;            /* Lighter text color on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button a {
+    color: #FFF;
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+}
+
+
+footer{
+    font-family: Dialog sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #cdcdcd;
+    border-radius: 13px;
+    background-image: url("images/footer.jpg");
+    background-size: 1800px 600px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+}
+
+.social{
+    display: flex;           /* Makes icons appear in a row */
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 48px;               /* Adjusts spacing between icons */
+    margin-top: 20px;        /* Adds space above the icons */
+    padding: 12px;
+    background-color: transparent;
+
+}
+.social a {
+    font-size: 40px;
+    color: #333;
+    text-decoration: none;
+    width: 25px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.social a:hover {
+    color: #3636fa;
+    background-color: transparent;
+}
+
+

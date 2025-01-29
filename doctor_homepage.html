@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malath | مَلاذ</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #e3f2fd;
-      color: #0d47a1;
-      margin: 0;
-      padding: 20px;
-    }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
     h1, h2 {
       text-align: center;
     }
@@ -19,10 +21,10 @@
       max-width: 800px;
       margin: 0 auto;
       background-color: #ffffff;
-      border: 1px solid #bbdefb;
+      border: 1px solid #e8e3e3;
       border-radius: 8px;
       padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
     }
     .doctor-info {
       margin-bottom: 20px;
@@ -32,7 +34,11 @@
     }
     .doctor-info img {
       max-width: 100px;
-      border-radius: 50%;
+      border-radius: 40%;
+      width: 150px;
+      height: auto;
+      border: 3px solid #fff;
+      box-shadow: 0 0 12px rgba(0,0,0, 0.1);
     }
     table {
       width: 100%;
@@ -44,11 +50,17 @@
     }
     th, td {
       padding: 10px;
-      text-align: left;
+      text-align: center;
     }
     th {
       background-color: #42a5f5;
       color: #ffffff;
+    }
+
+    table a {
+      text-align: center;
+      width: 130px;
+      margin: 0 auto;
     }
     .btn-confirm {
       background-color: #1e88e5;
@@ -61,14 +73,185 @@
     .btn-confirm:hover {
       background-color: #1565c0;
     }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+
+    header {
+      background-color: #fff;
+      display: inline-block;
+      padding: 20px ;
+      text-align: left;
+      margin: 0 auto;
+      border-radius: 14px;
+      font-weight: bold;
+
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    a {
+      text-align: right;
+      display: block;
+      text-decoration: none;
+      color: #3498db;
+      transition: color 0.3s;
+    }
+
+    img {
+      height: 120px;
+      width: 120px;
+    }
+
+    .logo{
+      text-align: left;
+      display: flex;
+      gap: 10px;
+      border: none;
+      align-items: center;
+      color: #3258be !important;
+
+    }
+
+    span{
+      color: #3258be !important;
+
+    }
+
+    h1{
+      font-family:'Amiri', serif;
+      font-size: 32px;
+     /* color: #4285e0;*/
+      padding-top: 15px;
+      line-height: 25px;
+      color: #3258be !important;
+
+
+    }
+
+    h3{
+      font-family:'Amiri', serif;
+      font-size: 28px;
+      color: #505498;
+      padding-top: 90px;
+      padding-left:190px ;
+      margin-bottom: 80px;
+
+    }
+
+    button {
+      padding: 10px;
+      margin-top: 10px;
+      position: relative;
+      vertical-align: center;
+    }
+
+    button:hover{
+      background-color: #0e384e; /* Darker background color on hover */
+      color: #e3e3e3;            /* Lighter text color on hover */
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #logout {
+      position: absolute;
+      top: 45px;
+      right: 75px;
+      background-color: #4763b1; /* Red button */
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      float: right;
+
+    }
+
+    footer{
+      font-family: Dialog sans-serif;
+      padding: 20px;
+      text-align: center;
+      background-color: #cdcdcd;
+      border-radius: 13px;
+      background-image: url("images/footer.jpg");
+      background-size: 1800px 600px;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-blend-mode: screen;
+    }
+
+    .social{
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      margin-top: 20px;
+      padding: 12px;
+      background-color: transparent;
+
+    }
+    .social a {
+      font-size: 40px;
+      color: #333;
+      text-decoration: none;
+      width: 25px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    .social a:hover {
+      color: #3636fa;
+      background-color: transparent;
+    }
+
   </style>
+
+
+  <meta charset="UTF-8">
+  <title>Malath | مَلاذ</title>
+  <link rel="stylesheet" href="patient.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
+<!--Header-->
+<header>
+  <!--Logo-->
+  <div class="logo">
+    <img  src="images/Malath2.png" alt="logo" style="width: 130px; height: auto;">
+    <h1>MALATH | مَلاذ <br><span style="float: left">Clinics</span></h1>
+  </div><br>
+  <!--Buttons Links-->
+  <button id="logout" ><a href="index.html">Log out</a></button>
+  <!--<button id="patInfo"><a>Patient Information</a></button>-->
+
+
+  <h3 > Welcome, Dr. Waleed </h3>
+</header>
+<br><br>
 <div class="container">
-  <h1>Welcome, Dr. Waleed</h1>
   <div class="doctor-info">
-    <h2>Doctor's Information</h2>
-    <img src="doctor.jpg" alt="Doctor Waleed's Photo">
+    <h2 style="font-size: 23px;">Doctor's Information</h2>
+    <img src="images/doctor.jpg" alt="Doctor Waleed's Photo">
     <p><strong>First Name:</strong> Waleed</p>
     <p><strong>Last Name:</strong> Aldbasi</p>
     <p><strong>ID:</strong> 1122883778</p>
@@ -78,6 +261,7 @@
 
   </div>
   <h2>Upcoming Appointments</h2>
+  <br>
   <table>
     <tr>
       <th>Date</th>
@@ -98,8 +282,9 @@
       <td><button class="btn-confirm">Confirm</button></td>
     </tr>
   </table>
-
+<br>
   <h2>Patients List</h2>
+  <br>
   <table>
     <tr>
       <th>Patients's Name</th>
@@ -116,16 +301,39 @@
       <td><a href="prescribe_medication.html" class="btn-confirm">Prescribe</a></td>
     </tr>
 
-
+    <tr>
       <td>Noura</td>
       <td>32</td>
       <td>Female</td>
       <td>None</td>
-      <td><a href="prescribe_medication.html" class="btn-confirm">Prescribe</a></td>
+      <td><a href="prescribe_medication.html" class="btn-confirm" >Prescribe</a></td>
     </tr>
   </table>
-  <a href="index.html">Sign Out</a>
 </div>
+<br><br><br>
+
+
+
+<footer>
+  <img src="images/Malath%20logo.png" alt="logo" >
+  <!-- <h3> Malath | مَلاذ </h3>-->
+  <p>مرحبًا بكم في مَلاذ، وجهتكم الأمثل للرعاية الصحية الشاملة.
+    نسعى لتقديم خدمات طبية موثوقة ومتميزة في بيئة مريحة وآمنة.
+    رؤيتنا هي تحسين جودة <br>الحياة من خلال الرعاية الصحية المتكاملة،
+    ونهتم باحتياجاتكم الصحية بكل احترافية واهتمام.
+    تواصلوا معنا للحصول على استشاراتكم الطبية وخدماتنا المتنوعة.
+  </p>
+
+  <div class="social">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-google"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+  </div>
+  <p> حقوق النشر © 2025 مَلاذ. </p>
+</footer>
+
+
 </body>
 </html>
 

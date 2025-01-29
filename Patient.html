@@ -18,7 +18,7 @@
         <h1>MALATH | مَلاذ <br><span>Clinics</span></h1>
     </div><br>
     <!--Buttons Links-->
-    <button id="logout" ><a>Log out</a></button>
+    <button id="logout" ><a href="index.html">Log out</a></button>
     <!--<button id="patInfo"><a>Patient Information</a></button>-->
 
 
@@ -62,13 +62,12 @@
        </thead>
        <tbody >
        <tr>
-           <td style="border-bottom-left-radius: 12px ;">2025-02-20</td>
+           <td style="border-bottom-left-radius: 12px ;">2025-12-20</td>
            <td style="width: 97px;">Sara doe</td>
            <td  style="width: 109px;">03:30 PM</td>
-           <td><img src="images/doc2.jpg" alt="doc"style="border-radius: 8px"></td>
+           <td><img src="images/doc2.jpg" alt="doc" style="border-radius: 8px"></td>
            <td>Confirmed</td>
-           <td   style="border-top-right-radius: 12px;"> <a href="#cancel">Cancel</a></td>
-
+           <td style="border-radius: 10px; border: 1px groove #d5d5d5; background: #f2f2f2 ;"><a href="#" class="cancel-link">Cancel</a></td>
 
        </tr>
        <tr>
@@ -77,7 +76,7 @@
            <td  >10:30 AM</td>
            <td><img src="images/doc1.jpg" alt="doc" style="border-radius: 8px"></td>
            <td>Pending</td>
-           <td style="border-bottom-right-radius: 12px ; background: #d4d5df ;"><a href="cancel">Cancel</a></td>
+           <td style="border-radius: 10px;border: 1px groove #d5d5d5; background: #f2f2f2 ;"><a href="#" class="cancel-link">Cancel</a></td>
 
        </tr>
        </tbody>
@@ -106,7 +105,36 @@
 </footer>
 
 
-<script src="order.js"></script>
+<script>
+
+
+    // Sort table rows by date and time on page load
+    window.addEventListener('DOMContentLoaded', () => {
+        const table = document.getElementById('appointmentTable');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.rows);
+
+        // Sort rows using toSorted()
+        const sortedRows = rows.toSorted((rowA, rowB) => {
+            const dateA = new Date(`${rowA.cells[0].textContent} ${rowA.cells[2].textContent}`);
+            const dateB = new Date(`${rowB.cells[0].textContent} ${rowB.cells[2].textContent}`);
+            return dateA - dateB;
+        });
+
+        // Reinsert the sorted rows into the table
+        sortedRows.forEach(row => tbody.appendChild(row));
+
+        // Attach event listener to cancel links
+        tbody.addEventListener('click', (event) => {
+            if (event.target.tagName === 'A' && event.target.textContent.trim() === 'Cancel') {
+                event.preventDefault(); // Prevent default link behavior
+                const row = event.target.closest('tr'); // Get the closest row
+                if (row) row.remove(); // Remove the row
+            }
+        });
+    });
+
+</script>
 
 </body>
 </html>
