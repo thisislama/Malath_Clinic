@@ -163,11 +163,11 @@ footer{
     background-color: #cdcdcd;
     border-radius: 13px;
     background-image: url("images/footer.jpg");
-    background-size: 1800px 600px;
+    background-size: 1800px 440px;
     background-position: top;
     background-repeat: no-repeat;
     background-blend-mode: screen;
-    height: 30vh;
+    height: 43vh;
 }
 
 .social{

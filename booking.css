@@ -146,10 +146,11 @@ footer{
     background-color: #cdcdcd;
     border-radius: 13px;
     background-image: url("images/footer.jpg");
-    background-size: 1800px 600px;
+    background-size: 1800px 440px;
     background-position: top;
     background-repeat: no-repeat;
     background-blend-mode: screen;
+    height: 43vh;
 }
 
 .social{
@@ -321,7 +322,6 @@ footer{
     cursor: pointer;
     transition: all 0.3s ease;
     width: 167px;
-
 }
 
 .booking #submitButton:hover {

@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Reset and General Styles */
+/* Reset a-nd General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -131,21 +131,20 @@ main h1 {
 }
 
 /* Footer Styling */
-footer {
-	/*position: relative;*/
-    padding: 20px;
-    text-align: center;
-    background-color: #cdcdcd;
-    border-radius: 13px;
-    background-image: url("images/footer.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-blend-mode: screen;
-	color: black;
-    margin-top: auto;
-	width:100%;
-}
+ footer{
+        font-family: Dialog sans-serif;
+        padding: 20px;
+        text-align: center;
+        background-color: #cdcdcd;
+        border-radius: 13px;
+        background-image: url("images/footer.jpg");
+        background-size: 1800px 440px;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-blend-mode: screen;
+        height: 43vh;
+    }
+
 
 footer p {
     font-size: 14px;
