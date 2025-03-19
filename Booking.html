@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Malath | مَلاذ</title>
-  <link rel="stylesheet" href="booking.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Malath | مَلاذ</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
+
 <body>
 <!--Header-->
 <header>
@@ -14,71 +16,73 @@
     <div class="logo">
         <img  src="images/Malath2.png" alt="logo" style="width: 130px; height: auto;">
         <h1>MALATH | مَلاذ <br><span>Clinics</span></h1>
-    </div><br>
+    </div>
     <!--Buttons-->
     <button id="logout" ><a href="index.html">Log out</a></button>
 
 
     <h3 >Welcome, Nora  </h3>
 </header>
-<br><br>
+
 
 <!--FORM OF BOOKING-->
 <div class="booking">
-  <form action="#">
-    <h2> Book an Appointment </h2><br>
-<div class="input">
-    <form class="Speciality">
-    <select id="speci" name="speci" required>
-        <option value=""  disabled selected> </option>
-        <option value="Cardiology">Cardiology</option>
-        <option value="Dermatology">Dermatology</option>
-        <option value="Neurology">Neurology</option>
-        <option value="Pediatrics">Pediatrics</option>
-    </select>
-    <span for="speci" class="drsList" >Choose a specialty:</span>
+    <form id="spec" action="#">
+        <h2> Book an Appointment </h2><br>
 
-        <button class="Submit_Spec" type="submit">Submit</button>
+        <!--  <form class="Speciality">
+            -->  <div class="input">
+        <select id="speci" name="speci" required>
+            <option value=""  disabled selected> </option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Dermatology">Dermatology</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Pediatrics">Pediatrics</option>
+        </select>
+        <span for="speci" class="drsList" >Choose a specialty:</span>
+    </div>
+        <button id="Submit_Spec" type="submit" onclick="fun()">Submit</button>
+
     </form>
+
+    <form  style="display: none;" id="doc">
+
+        <div class="input">
+            <select id="dr" name="drs" required>
+                <option value=""> </option>
+                <option value="dr1">John doe</option>
+                <option value="dr2">Derina Madeline</option>
+                <option value="dr3">Ahmed Nasser</option>
+            </select>
+            <span for="dr" class="drsList">Choose a doctor:</span>
+        </div>
+
+        <div class="input">
+            <input type="date" id="date" name="date" required >
+            <span >Choose a date:</span>
+        </div>
+
+
+        <div class="input">
+            <input type="time" id="time" name="time">
+            <span for="time" >Choose a time:</span>
+        </div>
+
+        <div class="input">
+            <input type="text" id="visit" name="visit"  required>
+            <span class="visit" >Reason for visit:</span>
+        </div>
+
+        <div class="input">
+            <button type="submit" id="submitButton" onclick="location.href='Patient.html'">Submit Booking</button><br>
+        </div>
+
+
+
+    </form>
+
+
 </div>
-
-    <div class="input">
-    <select id="dr" name="drs" required>
-        <option value=""> </option>
-        <option value="dr1">John doe</option>
-      <option value="dr2">Derina Madeline</option>
-      <option value="dr3">Ahmed Nasser</option>
-    </select>
-        <span for="dr" class="drsList">Choose a doctor:</span>
-
-    </div>
-
-    <div class="input">
-    <input type="date" id="date" name="date" required >
-      <span >Choose a date:</span>
-    </div>
-
-
-    <div class="input">
-    <input type="time" id="time" name="time">
-      <span for="time" >Choose a time:</span>
-    </div>
-
-    <div class="input">
-    <input type="text" id="visit" name="visit"  required>
-        <span class="visit" >Reason for visit:</span>
-    </div>
-
-    <div class="input">
-<!--    <input type="submit" id="submitButton" value="Submit Booking" href="Patient.html">-->
-        <button type="submit" id="submitButton" onclick="location.href='Patient.html'">Submit Booking</button><br>
-    </div>
-
-
-  </form>
-</div>
-
-
 
 <footer>
     <img src="images/Malath%20logo.png" alt="logo" >
@@ -99,6 +103,20 @@
     <p> حقوق النشر © 2025 مَلاذ. </p>
 </footer>
 
+
+<script>
+    function fun() {
+        //document.getElementById("Submit_Spec").addEventListener("click", submit);
+
+
+        document.getElementById("spec").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent actual form submission
+            document.getElementById("doc").style.display = "block"; // Show Form B
+            document.getElementById("Submit_Spec").style.display = "none"; // Show Form B
+
+        });
+    }
+</script>
 
 </body>
 </html>

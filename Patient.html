@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
     <div class="logo">
         <img  src="images/Malath2.png" alt="logo" style="width: 130px; height: auto;">
         <h1>MALATH | مَلاذ <br><span>Clinics</span></h1>
-    </div><br>
+    </div>
     <!--Buttons Links-->
     <button id="logout" ><a href="index.html">Log out</a></button>
     <!--<button id="patInfo"><a>Patient Information</a></button>-->
@@ -25,69 +26,74 @@
     <h3 > Welcome, Nora </h3>
 </header>
 
-<br><br>
-<button id="bookAppo"><a href="Booking.html" >Book an Appointment</a></button>
 
 
-<!--<div class="sqr">-->
-<button id="patInfo" style="top: -42px; left:270px ;" ><a>Patient Information</a></button>
-<div class="PatientInfo">
+<div class="main-content">
+    <!--main-content-->
 
-   <!-- <h2 id="patInfo2">Patient Information</h2>-->
+    <!--
+    <button id="patInfo" style="top: -42px; left:270px ;" ><a>Patient Information</a></button>
+    -->
 
-    <ul>
-        <li>  <h4> Name: Nora Ahmed</h4> </li>
-        <li>  <h4> ID: 332211 </h4> </li>
-        <li>  <h4> Gender: Female </h4> </li>
-        <li>  <h4> Date Of Birth: 12/12/1998 </h4> </li>
-        <li>  <h4> Email: Nora@gmail.com </h4> </li>
-        <li>  <h4> Address: 12st Riyadh, Saudi Arabia  </h4> </li>
-    </ul>
-</div>
+    <div class="PatientInfo">
+        <ul>
+            <li>  <h4> Name: Nora Ahmed</h4> </li>
+            <li>  <h4> ID: 332211 </h4> </li>
+            <li>  <h4> Gender: Female </h4> </li>
+            <li>  <h4> Date Of Birth: 12/12/1998 </h4> </li>
+            <li>  <h4> Email: Nora@gmail.com </h4> </li>
+            <li>  <h4> Address: 12st Riyadh, Saudi Arabia  </h4> </li>
+        </ul>
+    </div>
 
 
 
-<!--Appointment Table-->
-<div class="appointmentList">
-   <table id="appointmentTable">
-       <thead >
-       <tr style="text-align: center;">
-           <th style="border-top-left-radius: 12px ;">Date</th>
-           <th>Doctor name</th>
-           <th>Time</th>
-           <th>Doctor photo</th>
-           <th style="border-top-right-radius: 12px ;">Status</th>
+    <!--Appointment Table-->
+    <div class="appointmentList">
 
-       </tr>
-       </thead>
-       <tbody >
-       <tr>
-           <td style="border-bottom-left-radius: 12px ;">2025-12-20</td>
-           <td style="width: 97px;">Sara doe</td>
-           <td  style="width: 109px;">03:30 PM</td>
-           <td><img src="images/doc2.jpg" alt="doc" style="border-radius: 8px"></td>
-           <td>Confirmed</td>
-           <td style="border-radius: 10px; border: 1px groove #d5d5d5; background: #f2f2f2 ;"><a href="#" class="cancel-link">Cancel</a></td>
+        <button id="bookAppo"><a href="Booking.html" >Book an Appointment</a></button>
 
-       </tr>
-       <tr>
-           <td  style="border-bottom-left-radius: 12px ; width:127px ;">2025-08-22</td>
-           <td>John doe</td>
-           <td  >10:30 AM</td>
-           <td><img src="images/doc1.jpg" alt="doc" style="border-radius: 8px"></td>
-           <td>Pending</td>
-           <td style="border-radius: 10px;border: 1px groove #d5d5d5; background: #f2f2f2 ;"><a href="#" class="cancel-link">Cancel</a></td>
+        <table id="appointmentTable">
+            <thead >
+            <tr style="text-align: center;">
+                <th style="border-top-left-radius: 12px ;">Date</th>
+                <th>Doctor name</th>
+                <th>Time</th>
+                <th>Doctor photo</th>
+                <th style="border-top-right-radius: 12px ;">Status</th>
 
-       </tr>
-       </tbody>
-   </table>
-</div><br>
-<!--Appointment Table ends-->
-<!--</div>-->
+            </tr>
+            </thead>
+            <tbody >
+            <tr>
+                <td style="border-bottom-left-radius: 12px ;">2025-12-20</td>
+                <td style="width: 97px;">Sara doe</td>
+                <td  style="width: 109px;">03:30 PM</td>
+                <td><img src="images/doc2.jpg" alt="doc" style="border-radius: 8px"></td>
+                <td>Confirmed</td>
+                <td style="border-radius: 10px; border: 1px groove #d5d5d5; background: #f2f2f2 ;"><a href="#" class="cancel-link">Cancel</a></td>
+
+            </tr>
+            <tr>
+                <td  style="border-bottom-left-radius: 12px ; width:127px ;">2025-08-22</td>
+                <td>John doe</td>
+                <td  >10:30 AM</td>
+                <td><img src="images/doc1.jpg" alt="doc" style="border-radius: 8px"></td>
+                <td>Pending</td>
+                <td style="border-radius: 10px;border: 1px groove #d5d5d5; background: #f2f2f2 ;"><a href="#" class="cancel-link">Cancel</a></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--Appointment Table ends-->
+</div><!--main-content-->
+
+
 
 <footer>
     <img src="images/Malath%20logo.png" alt="logo" >
-   <!-- <h3> Malath | مَلاذ </h3>-->
+    <!-- <h3> Malath | مَلاذ </h3>-->
     <p>مرحبًا بكم في مَلاذ، وجهتكم الأمثل للرعاية الصحية الشاملة.
         نسعى لتقديم خدمات طبية موثوقة ومتميزة في بيئة مريحة وآمنة.
         رؤيتنا هي تحسين جودة <br>الحياة من خلال الرعاية الصحية المتكاملة،
@@ -95,12 +101,12 @@
         تواصلوا معنا للحصول على استشاراتكم الطبية وخدماتنا المتنوعة.
     </p>
 
-<div class="social">
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-google"></i></a>
-    <a href="#"><i class="fa fa-youtube"></i></a>
-</div>
+    <div class="social">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+    </div>
     <p> حقوق النشر © 2025 مَلاذ. </p>
 </footer>
 
