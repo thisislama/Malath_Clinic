@@ -6,7 +6,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 // التحقق من وجود المستخدم في الجلسة
 if (!isset($_SESSION['user_id'])) {
-    header("Location: index.php"); // إعادة التوجيه إلى الصفحة الرئيسية إذا لم يكن المستخدم مسجل دخول
+    header("Location: index.html"); // إعادة التوجيه إلى الصفحة الرئيسية إذا لم يكن المستخدم مسجل دخول
     exit();
 }
 
